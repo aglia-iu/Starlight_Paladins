@@ -63,7 +63,7 @@ MonoBehaviour:
       animationStateEndValue: {r: 0, g: 0.627451, b: 1, a: 1}
     - stateName: selected
       animationStateStartValue: {r: 0, g: 0.627451, b: 1, a: 1}
-      animationStateEndValue: {r: 1, g: 0.40000004, b: 0, a: 1}
+      animationStateEndValue: {r: 1, g: 1, b: 1, a: 1}
     - stateName: activated
       animationStateStartValue: {r: 1, g: 0.40000004, b: 0, a: 1}
       animationStateEndValue: {r: 1, g: 0.9729279, b: 0, a: 1}
