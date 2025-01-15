@@ -15,8 +15,8 @@ public class XRSnapInteractible : XRSocketInteractor
     // PUBLIC VARIABLES
   
     public string faceTag; // The face of the object and it's tag
-    public GameObject correct;
-    public GameObject wrong;
+    //public GameObject correct;
+    //public GameObject wrong;
 
     // PRIVATE VARIABLES
     private bool connected = false; // The state of the face, i.e. if it is connected or not. 
@@ -27,7 +27,7 @@ public class XRSnapInteractible : XRSocketInteractor
     
     public override bool CanHover(IXRHoverInteractable interactable)
     {
-        if (ConnectFacesHover(interactable))
+        /*if (ConnectFacesHover(interactable))
         {
             correct.SetActive(true);
             wrong.SetActive(false);
@@ -36,13 +36,13 @@ public class XRSnapInteractible : XRSocketInteractor
         {
             correct.SetActive(false);
             wrong.SetActive(true);
-        }
+        }*/
         return base.CanHover(interactable) && ConnectFacesHover(interactable);       
         
     }
     public override bool CanSelect(IXRSelectInteractable interactable)
     {
-       if (ConnectFacesSelect(interactable))
+       /*if (ConnectFacesSelect(interactable))
        {
             correct.SetActive(true);
             wrong.SetActive(false);
@@ -51,7 +51,7 @@ public class XRSnapInteractible : XRSocketInteractor
        {
             correct.SetActive(false);
             wrong.SetActive(true);
-        }
+        }*/
         return base.CanSelect(interactable) && ConnectFacesSelect(interactable);
        
     }

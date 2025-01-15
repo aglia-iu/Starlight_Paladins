@@ -22,9 +22,9 @@ MonoBehaviour:
     palmReferenceAxis: 4
     invertAxisForRightHand: 0
     requirePalmFacingUser: 0
-    palmFacingUserDegreeAngleThreshold: 54
+    palmFacingUserDegreeAngleThreshold: -30
     requirePalmFacingUp: 1
-    palmFacingUpDegreeAngleThreshold: 72
+    palmFacingUpDegreeAngleThreshold: 60
     snapToGaze: 0
     snapToGazeAngleThreshold: 30
     hideDelaySeconds: 0.15

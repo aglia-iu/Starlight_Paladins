@@ -8,6 +8,8 @@ TagManager:
   - blue
   - red
   - green
+  - cockpit_interior
+  - cockpit_body
   layers:
   - Default
   - TransparentFX

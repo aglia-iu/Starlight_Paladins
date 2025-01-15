@@ -2154,6 +2154,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1948693200}
+    - target: {fileID: 5030734266366949665, guid: e2698219e3231e94c8765d49b9dd5cff, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5030734266366949668, guid: e2698219e3231e94c8765d49b9dd5cff, type: 3}
       propertyPath: m_Camera
       value: 
@@ -7528,7 +7532,7 @@ MonoBehaviour:
   m_CheckFor3DOcclusion: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
 --- !u!114 &2105827458
 MonoBehaviour:
