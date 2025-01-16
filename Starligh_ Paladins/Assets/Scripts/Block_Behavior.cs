@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class Block_Behavior : MonoBehaviour
 {
     public Transform visualTarget; 
+    public Vector3 localAxis;
     
     private Vector3 offset;
     private Transform pokeAttachTransform;
@@ -35,8 +37,16 @@ public class Block_Behavior : MonoBehaviour
     {
         if (_isFollow)
         {
-            
+            // Vector3 localTargetPosition = visualTarget.InverseTransformPoint(pokeAttachTransform.position + offset);
+            //localTargetPosition.z = 0;
+            //Vector3 constrainedLocalTargetPos = Vector3.Project(localTargetPosition, localAxis);
+
+            //visualTarget.localPosition = localTargetPosition; 
+
+            //visualTarget.localPosition = pokeAttachTransform.position + offset; 
+
             visualTarget.position = pokeAttachTransform.position + offset;
+            visualTarget.localPosition = new Vector3(visualTarget.localPosition.x, visualTarget.localPosition.y, 0);
         }
     }
 }

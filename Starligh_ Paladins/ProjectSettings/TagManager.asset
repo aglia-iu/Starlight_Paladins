@@ -10,6 +10,10 @@ TagManager:
   - green
   - cockpit_interior
   - cockpit_body
+  - Engine1
+  - MainBody_Mirrored
+  - MainBody
+  - Tail
   layers:
   - Default
   - TransparentFX
