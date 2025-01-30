@@ -14,6 +14,14 @@ TagManager:
   - MainBody_Mirrored
   - MainBody
   - Tail
+  - Blaster
+  - Big_Launcher (2)
+  - Big_Launcher (3)
+  - Wing6
+  - Big_Launcher
+  - Big_Launcher (1)
+  - Wing2_Mirrored
+  - Wing2
   layers:
   - Default
   - TransparentFX
