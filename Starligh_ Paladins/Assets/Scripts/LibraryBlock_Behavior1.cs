@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using static UnityEngine.Rendering.DebugUI;
 
-public class LibraryBlock_Behavior : MonoBehaviour
+public class LibraryBlock_Behavior1 : MonoBehaviour
 {
-    public Canvas parentCanvas;
+    public GameObject parentCanvas;
     //[SerializeField] Panel parentPanel;
     public GameObject buttonType;
     //private bool _isSelected = false;
