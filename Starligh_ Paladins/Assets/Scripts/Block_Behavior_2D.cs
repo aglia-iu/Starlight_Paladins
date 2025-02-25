@@ -9,19 +9,20 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Block_Behavior_2D : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
     //IDragAndDropHandler
 {
+    public delegate void DragEndedDelegate(Block_Behavior_2D blockObject);
+    public DragEndedDelegate dragEndedCallback;
+
     private Canvas canvasParent;
     public Transform visualTarget;
     public Vector3 localAxis;
 
     private Vector3 offset;
-    private bool _isFollow = false;
+    private bool _isDragged = false;
 
     void Start()
     {
         offset = Vector3.zero;
         canvasParent = GetComponentInParent<Canvas>();
-        //_interactable = GetComponent<XRBaseInteractable>();
-        //_interactable.hoverEntered.AddListener(Follow);
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -30,19 +31,26 @@ public class Block_Behavior_2D : MonoBehaviour, IBeginDragHandler, IEndDragHandl
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("Dragging");
-        //offset = this.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //Debug.Log("Dragging");
 
         this.transform.position = Input.mousePosition - offset;
-        //transform.position = Input.mousePosition;
 
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("End Drag");
+        _isDragged = false;
+        dragEndedCallback(this);
 
     }
+    private void OnMouseUp()
+    {
+        Debug.Log("Mouse Up");
+        _isDragged = false;
+        dragEndedCallback(this);
+    }
+
     void Update()
     {
         //offset = this.transform.position - (Input.mousePosition);
