@@ -22,6 +22,8 @@ TagManager:
   - Big_Launcher (1)
   - Wing2_Mirrored
   - Wing2
+  - codeSnap
+  - codeBlocks
   layers:
   - Default
   - TransparentFX
