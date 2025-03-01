@@ -12,12 +12,7 @@ public class Block_SnapPoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         CollectBlocksofType();
-        //foreach (Block_Behavior_2D block in draggableObjs)
-        //{
-        //    block.dragEndedCallback = OnDragEnded;
-        //}
     }
 
     void Update()
@@ -36,14 +31,17 @@ public class Block_SnapPoint : MonoBehaviour
 
         foreach (Transform snapPoint in snapPoints)
         {
-            float currentDistance = Vector2.Distance(
+            if (snapPoint.transform != block.transform)
+            {
+                float currentDistance = Vector2.Distance(
                 block.transform.localPosition,
                 snapPoint.localPosition
                 );
-            if (closestSnapPoint == null || currentDistance < closestDistance)
-            {
-                closestSnapPoint = snapPoint;
-                closestDistance = currentDistance;
+                if (closestSnapPoint == null || currentDistance < closestDistance)
+                {
+                    closestSnapPoint = snapPoint;
+                    closestDistance = currentDistance;
+                }
             }
         }
         Debug.Log("Closest Snap!");
@@ -57,22 +55,26 @@ public class Block_SnapPoint : MonoBehaviour
 
     private void CollectBlocksofType()
     {
-        GameObject[] snapObjects = GameObject.FindGameObjectsWithTag("codeSnap");
-        foreach (GameObject snapObject in snapObjects) 
-        {
-            if (!snapPoints.Contains(snapObject.transform))
-            {
-                snapPoints.Add(snapObject.transform);
-            }
-           
-        }
         GameObject[] blockObjects = GameObject.FindGameObjectsWithTag("codeBlocks");
         foreach (GameObject blockObject in blockObjects)
         {
-            if (!draggableObjs.Contains(blockObject.GetComponent<Block_Behavior_2D>()))
+            if (!snapPoints.Contains(blockObject.transform) && blockObject.GetComponent<Block_Behavior_2D>().codeSnap)
             {
-                draggableObjs.Add(blockObject.gameObject.GetComponent<Block_Behavior_2D>());
+                snapPoints.Add(blockObject.transform);
             }
+            else if (!draggableObjs.Contains(blockObject.GetComponent<Block_Behavior_2D>()) && blockObject.GetComponent<Block_Behavior_2D>().codeBlocks)
+            {
+                draggableObjs.Add(blockObject.GetComponent<Block_Behavior_2D>());
+            }
+
         }
+        //GameObject[] blockObjects = GameObject.FindGameObjectsWithTag("codeBlocks");
+        //foreach (GameObject blockObject in blockObjects)
+        //{
+        //    if (!draggableObjs.Contains(blockObject.GetComponent<Block_Behavior_2D>()))
+        //    {
+        //        draggableObjs.Add(blockObject.gameObject.GetComponent<Block_Behavior_2D>());
+        //    }
+        //}
     }
 }

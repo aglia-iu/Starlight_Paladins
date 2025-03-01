@@ -12,6 +12,9 @@ public class Block_Behavior_2D : MonoBehaviour, IBeginDragHandler, IEndDragHandl
     public delegate void DragEndedDelegate(Block_Behavior_2D blockObject);
     public DragEndedDelegate dragEndedCallback;
 
+    public bool codeSnap = false;
+    public bool codeBlocks = false;
+
     private Canvas canvasParent;
     public Transform visualTarget;
     public Vector3 localAxis;
@@ -26,31 +29,52 @@ public class Block_Behavior_2D : MonoBehaviour, IBeginDragHandler, IEndDragHandl
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Begin Drag");
+        if (codeBlocks
+            && codeSnap
+            )
+        {
+            Debug.Log("Begin Drag");
+        }
+        
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         //Debug.Log("Dragging");
-
-        this.transform.position = Input.mousePosition - offset;
-
+        if (codeBlocks 
+            && codeSnap
+            )
+        {
+            this.transform.position = Input.mousePosition - offset;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("End Drag");
-        _isDragged = false;
-        dragEndedCallback(this);
+        if (codeBlocks 
+            && codeSnap
+            )
+        {
+            Debug.Log("End Drag");
+            _isDragged = false;
+            dragEndedCallback(this);
+        }
+            
 
     }
     private void OnMouseUp()
     {
-        Debug.Log("Mouse Up");
-        _isDragged = false;
-        dragEndedCallback(this);
+        if (codeBlocks 
+            && codeSnap
+            )
+        {
+            Debug.Log("Mouse Up");
+            _isDragged = false;
+            dragEndedCallback(this);
+        }
+            
     }
-
+   
     void Update()
     {
         //offset = this.transform.position - (Input.mousePosition);
