@@ -33,6 +33,7 @@ public class Block_SnapPoint : MonoBehaviour
         {
             if (snapPoint.transform != block.transform)
             {
+                //BoxCollider2D position = snapPoint.GetComponent<BoxCollider2D>();
                 float currentDistance = Vector2.Distance(
                 block.transform.localPosition,
                 snapPoint.localPosition
@@ -49,7 +50,8 @@ public class Block_SnapPoint : MonoBehaviour
         Debug.Log(closestDistance);
         if (closestSnapPoint != null && closestDistance <= snapRange)
         {
-            block.transform.localPosition = closestSnapPoint.localPosition;
+            //block.transform.localPosition = closestSnapPoint.localPosition;
+            block.transform.localPosition = closestSnapPoint.localPosition + (Vector3)closestSnapPoint.GetComponent<BoxCollider2D>().offset;
         }
     }
 
