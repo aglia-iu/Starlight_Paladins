@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -36, y: -96}
+  m_AnchoredPosition: {x: -36, y: 19}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &134853811
@@ -937,9 +937,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 499445420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.82863, y: -7.3048706}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 186.82863, y: -32.30487}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &532077030
@@ -1272,7 +1272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -36, y: 200}
+  m_AnchoredPosition: {x: -36, y: 204}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893285240
@@ -1494,7 +1494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -36, y: 52}
+  m_AnchoredPosition: {x: -36, y: 117}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990871916
@@ -1929,7 +1929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1559561407
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2119,8 +2119,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 144, y: 0}
-  m_SizeDelta: {x: -281.44485, y: 0}
+  m_AnchoredPosition: {x: 289, y: 0}
+  m_SizeDelta: {x: -164.31245, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1822109245
 MonoBehaviour:
@@ -2259,7 +2259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.7023926, y: 200}
+  m_AnchoredPosition: {x: 5.7023926, y: 130}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &886708782506543134
@@ -2521,11 +2521,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6040261556937051451, guid: 6684e69ac6cf67e42937e1c2adef83f6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -135
+      value: -132
       objectReference: {fileID: 0}
     - target: {fileID: 6040261556937051451, guid: 6684e69ac6cf67e42937e1c2adef83f6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 175.1
+      value: 229
       objectReference: {fileID: 0}
     - target: {fileID: 6040261556937051451, guid: 6684e69ac6cf67e42937e1c2adef83f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2571,7 +2571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.7023926, y: 144}
+  m_AnchoredPosition: {x: 5.7023926, y: 74}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2366934910481224093
@@ -2639,7 +2639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.7023926, y: 82}
+  m_AnchoredPosition: {x: 5.7023926, y: 12}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2832498748862754877
@@ -2791,11 +2791,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 752518396720158581, guid: b2d9f3d2a3374c04bb33da140584fa2d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -140
+      value: -112
       objectReference: {fileID: 0}
     - target: {fileID: 752518396720158581, guid: b2d9f3d2a3374c04bb33da140584fa2d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 90.79997
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 752518396720158581, guid: b2d9f3d2a3374c04bb33da140584fa2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3279,8 +3279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98202dca603c4dd4293a32cdb5935f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentCanvas: {fileID: 1341730678}
-  buttonType: {fileID: 5822424679554693344, guid: c0ad6e01bff43b44fbcb00a98d59e953, type: 3}
+  parentCanvas: {fileID: 614954737}
+  buttonType: {fileID: 7277328576437772653, guid: 874234943211333458f6ee03fcbc362d, type: 3}
 --- !u!114 &6314927872265511043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3462,8 +3462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98202dca603c4dd4293a32cdb5935f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentCanvas: {fileID: 1341730678}
-  buttonType: {fileID: 289245371566604563, guid: 1b58c54562e577e42bd6ea448a7a4ebb, type: 3}
+  parentCanvas: {fileID: 614954737}
+  buttonType: {fileID: 7277328576437772653, guid: 5ced4e48525614141a0c367d48241f95, type: 3}
 --- !u!224 &7905619144862609397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3652,8 +3652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98202dca603c4dd4293a32cdb5935f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentCanvas: {fileID: 1341730678}
-  buttonType: {fileID: 1279619256111083037, guid: 7ea1be010812c4341af23b46e50246bb, type: 3}
+  parentCanvas: {fileID: 614954737}
+  buttonType: {fileID: 7277328576437772653, guid: 3ad4dc6942829df40b9ae73fd491fe64, type: 3}
 --- !u!1 &8387415951378255055
 GameObject:
   m_ObjectHideFlags: 0
@@ -3829,8 +3829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98202dca603c4dd4293a32cdb5935f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentCanvas: {fileID: 1341730678}
-  buttonType: {fileID: 902808801831781841, guid: a4e52c9507372024195ea699c5e6b5f7, type: 3}
+  parentCanvas: {fileID: 614954737}
+  buttonType: {fileID: 7277328576437772653, guid: 46f43525e1fe78642aab4650472cefd4, type: 3}
 --- !u!114 &8531373382919268277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3952,8 +3952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98202dca603c4dd4293a32cdb5935f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentCanvas: {fileID: 1341730678}
-  buttonType: {fileID: 8205436698417887776, guid: 2a5d3d08f18ce4c4fb1c1771dce988c7, type: 3}
+  parentCanvas: {fileID: 614954737}
+  buttonType: {fileID: 7277328576437772653, guid: 5c7dd92b95ac24e40965ad1377e59a7b, type: 3}
 --- !u!114 &8798694700384211282
 MonoBehaviour:
   m_ObjectHideFlags: 0
