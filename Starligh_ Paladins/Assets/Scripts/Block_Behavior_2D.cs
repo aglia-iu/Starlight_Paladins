@@ -35,7 +35,6 @@ public class Block_Behavior_2D : MonoBehaviour, IBeginDragHandler, IEndDragHandl
         {
             Debug.Log("Begin Drag");
         }
-        
     }
 
     public void OnDrag(PointerEventData eventData)
