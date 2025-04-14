@@ -1,54 +1,9 @@
 fileFormatVersion: 2
-guid: dbe87c83770eb714bb47da9b5249ebfc
+guid: 70703733a7ca73146a1de8962750b136
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Button
-    second: {fileID: 2100000, guid: ab506a6538abb0c4fbea283094c62a44, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Frame
-    second: {fileID: 2100000, guid: 9fb731a8329535f479c7b51b3438a8da, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gear
-    second: {fileID: 2100000, guid: c2f7155d6769ede4682885466ae1d87d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Panel
-    second: {fileID: 2100000, guid: e7975a800e59fb7499c7a173ab4b4642, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wrist
-    second: {fileID: 2100000, guid: 87b2a54ae05982843b1e2d22b3d1f850, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WristFrame
-    second: {fileID: 2100000, guid: d694681a408b080488a0f34b2094f21a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wireBlack
-    second: {fileID: 2100000, guid: 6986e823d23ca8f4b8316f169c17f57b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wireBlue
-    second: {fileID: 2100000, guid: 4855c6583d580414c85eb7e075b79eab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wireGrey
-    second: {fileID: 2100000, guid: 8f43ed57c6d6331448178a368d30193f, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

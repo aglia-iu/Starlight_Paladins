@@ -5,15 +5,32 @@ using UnityEngine;
 public class CodeMenu_ToggleUI : MonoBehaviour
 {
     //PUBLIC VARIABLES
-    public GameObject UICanvas;
+    public GameObject toggleObject;
+    public Material materialEmissive;
+    public Material materialMatte;
 
     // PRIVATE VARIABLES
     private bool toggle = false;
+    
 
     public void SwitchToggle()
     {
         toggle = !toggle;
-        UICanvas.SetActive(toggle);
+        toggleObject.SetActive(toggle);
 
+    }
+
+    public void SwitchMaterial()
+    {
+        toggle = !toggle;
+        if (toggle)
+        {
+            this.GetComponent<Renderer>().material = materialEmissive;
+        }
+        else
+        {
+            this.GetComponent<Renderer>().material = materialMatte;
+
+        }
     }
 }
