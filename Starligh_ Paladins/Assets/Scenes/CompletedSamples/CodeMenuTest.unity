@@ -4427,7 +4427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1041, y: 101}
+  m_AnchoredPosition: {x: 1132, y: 101}
   m_SizeDelta: {x: 232.3, y: 44.29999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893285240
@@ -4536,7 +4536,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7eb0ee17d348a4095698f57d1be223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UICanvas: {fileID: 1559561406}
+  toggleObject: {fileID: 1559561406}
+  materialEmissive: {fileID: 0}
+  materialMatte: {fileID: 0}
 --- !u!1 &896354527
 GameObject:
   m_ObjectHideFlags: 0
@@ -5264,7 +5266,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1036, y: -1}
+  m_AnchoredPosition: {x: 1116, y: -1}
   m_SizeDelta: {x: 232.3, y: 44.29999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990871916
@@ -5373,7 +5375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7eb0ee17d348a4095698f57d1be223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UICanvas: {fileID: 1822109243}
+  toggleObject: {fileID: 1822109243}
+  materialEmissive: {fileID: 0}
+  materialMatte: {fileID: 0}
 --- !u!1 &1043867052
 GameObject:
   m_ObjectHideFlags: 0
