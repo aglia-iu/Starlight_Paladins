@@ -5,7 +5,7 @@ using UnityEngine;
 public class CodeMenu_ToggleUI : MonoBehaviour
 {
     //PUBLIC VARIABLES
-    public GameObject toggleObject;
+    //public GameObject toggleObject;
     public Material materialEmissive;
     public Material materialMatte;
 
@@ -13,7 +13,7 @@ public class CodeMenu_ToggleUI : MonoBehaviour
     private bool toggle = false;
     
 
-    public void SwitchToggle()
+    public void SwitchToggle(GameObject toggleObject)
     {
         toggle = !toggle;
         toggleObject.SetActive(toggle);

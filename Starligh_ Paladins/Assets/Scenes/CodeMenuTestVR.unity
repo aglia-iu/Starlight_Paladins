@@ -12460,6 +12460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CodeBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 7772572651030241807, guid: 66ba5c6ff043bb3479f6f8736fd4d3ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
