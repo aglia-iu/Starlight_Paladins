@@ -24,6 +24,9 @@ TagManager:
   - Wing2
   - codeSnap
   - codeBlocks
+  - SnapTo
+  - SnapWith
+  - Wing6_Mirrored
   layers:
   - Default
   - TransparentFX
