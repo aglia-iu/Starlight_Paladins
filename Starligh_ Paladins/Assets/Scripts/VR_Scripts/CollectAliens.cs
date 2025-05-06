@@ -19,10 +19,10 @@ public class CollectAliens : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("I collided!");
-        if (collision.gameObject.tag == "alien")
+        if (collision.gameObject.tag == "axolotl")
         {
             Debug.Log("Caught an aliens!");
-            collision.gameObject.transform.parent = this.transform;
+            collision.gameObject.transform.SetParent(this.transform);
             collision.gameObject.transform.position = new Vector3(0, 0, 0);
         }
     }

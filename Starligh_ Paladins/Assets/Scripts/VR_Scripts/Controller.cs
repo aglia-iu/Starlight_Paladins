@@ -5,12 +5,17 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [SerializeField] GameObject UI_Panel_Complete;
+    [SerializeField] GameObject codePanel;
+    [SerializeField] GameObject wire;
     [SerializeField] GameObject[] snapPoints;
-    private int inactiveComponents;
+    private int _inactiveComponents;
     // Start is called before the first frame update
     void Start()
     {
-        CollectAllSnapPoints();  
+        CollectAllSnapPoints();
+        UI_Panel_Complete.SetActive(false);
+        wire.SetActive(false);
+        codePanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,7 +32,7 @@ public class Controller : MonoBehaviour
 
     void CheckSnapPoints()
     {
-        if (inactiveComponents >= 1)
+        if (_inactiveComponents >= 1)
         {
             UI_Panel_Complete.SetActive(true);
         }
@@ -43,26 +48,28 @@ public class Controller : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log(snapPoint.gameObject.name + " is inactive!" + inactiveComponents);
+                    //Debug.Log(snapPoint.gameObject.name + " is inactive!" + _inactiveComponents);
                 }
             }
             else
             {
-                Debug.Log("Couldn't acquire XRSnapInteractible for " + snapPoint.gameObject.name);
+                //Debug.Log("Couldn't acquire XRSnapInteractible for " + snapPoint.gameObject.name);
 
             }
         }
 
-        if(inactiveComponents >= 12)
+        if(_inactiveComponents >= 12)
         {
             UI_Panel_Complete.SetActive(true);
+            wire.SetActive(true);
+            codePanel.SetActive(true);
         }
         
     }
 
     public void ActivatedComponents()
     {
-        inactiveComponents++;
+        _inactiveComponents++;
     }
     
 }
