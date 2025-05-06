@@ -27,6 +27,9 @@ TagManager:
   - SnapTo
   - SnapWith
   - Wing6_Mirrored
+  - plug
+  - axolotl
+  - jar
   layers:
   - Default
   - TransparentFX
