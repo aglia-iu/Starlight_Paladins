@@ -26,4 +26,17 @@ public class CollectAliens : MonoBehaviour
             collision.gameObject.transform.position = new Vector3(0, 0, 0);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("I collided!");
+        if (other.gameObject.tag == "axolotl")
+        {
+            Debug.Log("Caught an aliens!");
+            other.gameObject.transform.SetParent(this.transform);
+            other.gameObject.transform.localScale *= 0.1f;
+            other.gameObject.transform.localPosition = Vector3.zero;
+            
+        }
+    }
 }
