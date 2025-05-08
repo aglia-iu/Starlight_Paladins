@@ -28,7 +28,7 @@ public class LibraryBlock_Behavior : MonoBehaviour
         //if (_isSelected) 
         //{
            // _isSelected = !_isSelected;
-           Debug.Log("Is Instantiated");
+           //Debug.Log("Is Instantiated");
             GameObject newButton = Instantiate(buttonType, parentCanvas.transform.position,parentCanvas.transform.rotation);
             newButton.transform.SetParent(parentCanvas.transform,true);
             newButton.transform.localScale = buttonType.transform.localScale;

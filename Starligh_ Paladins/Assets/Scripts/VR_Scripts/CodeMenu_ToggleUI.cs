@@ -8,22 +8,33 @@ public class CodeMenu_ToggleUI : MonoBehaviour
     //public GameObject toggleObject;
     public Material materialEmissive;
     public Material materialMatte;
+    public bool activateGun = false;
+    public Wrist_Instructions wristInstructions;
 
     // PRIVATE VARIABLES
-    private bool toggle = false;
-    
+    private bool _toggle = false;
+    private int _counter = 0;
 
+    void Start()
+    {
+        _counter = 0;
+    }
     public void SwitchToggle(GameObject toggleObject)
     {
-        toggle = !toggle;
-        toggleObject.SetActive(toggle);
+        _toggle = !_toggle;
+        _counter++;
+        if(_counter < 3 && toggleObject.tag == "jar")
+        {
+            wristInstructions.StepIncrement();
+        }
+        toggleObject.SetActive(_toggle);
 
     }
 
     public void SwitchMaterial()
     {
-        toggle = !toggle;
-        if (toggle)
+        _toggle = !_toggle;
+        if (_toggle)
         {
             this.GetComponent<Renderer>().material = materialEmissive;
         }

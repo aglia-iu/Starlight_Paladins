@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollectAliens : MonoBehaviour
 {
+    private int collected = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class CollectAliens : MonoBehaviour
         Debug.Log("I collided!");
         if (collision.gameObject.tag == "axolotl")
         {
-            Debug.Log("Caught an aliens!");
+            //Debug.Log("Caught an aliens!");
             collision.gameObject.transform.SetParent(this.transform);
             collision.gameObject.transform.position = new Vector3(0, 0, 0);
         }
@@ -30,12 +31,13 @@ public class CollectAliens : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("I collided!");
-        if (other.gameObject.tag == "axolotl")
+        if (other.gameObject.tag == "axolotl" && collected < 3)
         {
-            Debug.Log("Caught an aliens!");
+            //Debug.Log("Caught an aliens!");
+            collected++;
             other.gameObject.transform.SetParent(this.transform);
             other.gameObject.transform.localScale *= 0.1f;
-            other.gameObject.transform.localPosition = Vector3.zero;
+            other.gameObject.transform.localPosition = new Vector3(0 + (collected * 0.1f), 0, 0 + (collected * 0.1f));
             
         }
     }

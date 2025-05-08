@@ -9,23 +9,46 @@ public class LaserActivate : MonoBehaviour
     //PUBLIC
     public ActionBasedController controller;
     public GameObject gun;
+    public Wrist_Instructions wristInstructions;
+
+    private bool _toggle = false;
+    private Transform _baseController;
+    private int _counter = 0;
     //PRIVATE
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _baseController = controller.modelPrefab;
+        _counter = 0;
+    }
+    void Update()
+    { 
+        SetGun();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SwitchToggle(GameObject toggleObject)
     {
-        
+        _toggle = !_toggle;
+        _counter++;
+        if (_counter < 2) {
+            wristInstructions.StepIncrement();
+        }
+        toggleObject.SetActive(_toggle);
+
     }
 
     public void SetGun()
     {
-        gun.gameObject.SetActive(true);
-        controller.modelPrefab = gun.gameObject.transform;
+        if (_toggle)
+        {
+            //gun.gameObject.SetActive(true);
+            controller.modelPrefab = gun.gameObject.transform;
+        }
+        else if(!_toggle)
+        {
+            controller.modelPrefab = _baseController;
+            //gun.gameObject.SetActive(false);
+        }
     }
 }

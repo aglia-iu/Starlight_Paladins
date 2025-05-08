@@ -45,7 +45,7 @@ public class Block_SnapPoint : MonoBehaviour
                 }
             }
         }
-        Debug.Log("Closest Snap!");
+        //Debug.Log("Closest Snap!");
         Debug.Log(closestSnapPoint);
         Debug.Log(closestDistance);
         if (closestSnapPoint != null && closestDistance <= snapRange)

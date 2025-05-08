@@ -43,7 +43,7 @@ public class Controller : MonoBehaviour
             {
                 if (snapPointInteractable.socketActive)
                 {
-                    Debug.Log(snapPoint.gameObject.name + " is active!");
+                    //Debug.Log(snapPoint.gameObject.name + " is active!");
                     //return;
                 }
                 else
