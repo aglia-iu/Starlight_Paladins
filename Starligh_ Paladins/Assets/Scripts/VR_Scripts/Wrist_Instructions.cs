@@ -71,18 +71,14 @@ public class Wrist_Instructions : MonoBehaviour
                 break;
 
             case 7:
-                _wristPanel.text = "TASK 5:Reassemble the ship, piece by piece";
-                break;
-
-            case 8:
                 _wristPanel.text = "TASK 6: Program the ship to move forward. ";
                 break;
 
-            case 9:
+            case 8:
                 _wristPanel.text = "Deposit Aliens into the cockpit of the ship";
                 break;
 
-            case 10:
+            case 9:
                 _wristPanel.text = "MISSION ACCOMPLISHED!";
                 break;
         }

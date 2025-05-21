@@ -7,6 +7,7 @@ public class Controller : MonoBehaviour
     [SerializeField] GameObject UI_Panel_Complete;
     [SerializeField] GameObject codePanel;
     [SerializeField] GameObject wire;
+    [SerializeField] GameObject plug;
     [SerializeField] GameObject[] snapPoints;
     private int _inactiveComponents;
     // Start is called before the first frame update
@@ -63,6 +64,7 @@ public class Controller : MonoBehaviour
             UI_Panel_Complete.SetActive(true);
             wire.SetActive(true);
             codePanel.SetActive(true);
+            plug.SetActive(true);
         }
         
     }
